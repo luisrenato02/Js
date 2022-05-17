@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: green;
+            font: 15px Arial;
+        }
+        input{
+            width: 150px;
+            height: 25px;
+        }
+
+        button{
+            width: 100px;
+            height: 25px;
+            background-color: darkgreen;
+            color: white;
+        }
+
+        div{
+            text-align: center;
+            margin-top: 20px;
+            background-color: white;
+            width: 100px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+    <input type="number" name="" id="val1">
+    <input type="number" name="" id="val2">
+    <input type="button" value="Somar!" onclick="somar()">
+    <div id="res">RESULTADO</div>
+
+    
+
+
+    <script>
+        function somar(){
+
+            let val1 = document.getElementById("val1")
+            let val2 = document.getElementById("val2")
+            let n1 = Number(val1.value)
+            let n2 = Number(val2.value)
+
+            let res = document.getElementById("res")
+            let result=n1+n2
+            
+            res.innerHTML=result
+            
+        }
+    </script>
+</body>
+</html>
