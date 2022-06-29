@@ -21,11 +21,11 @@ function verificar(){
             }
             else if (idade >= 12 && idade <= 17){
                 img.src = 'img/jovem_homem.jpg'
-                res.innerHTML = `Adolescente de ${idade} anos`
+                res.innerHTML = `Adolescente homem de ${idade} anos`
             }
             else if (idade >= 18 && idade <= 60){
                 img.src = 'img/adulto_homem.jpg'
-                res.innerHtml = `Adulto de ${idade} anos`
+                res.innerHTML = `Adulto de ${idade} anos`
             }
             else if (idade > 60 && idade <= 122){
                 img.src = 'img/idoso_homem.jpg'
@@ -44,15 +44,15 @@ function verificar(){
             }
             else if (idade >= 12 && idade <=17){
                 img.src = 'img/jovem_mulher.jpg'
-                res.innerHTML = `Adolescente de ${idade} anos`
+                res.innerHTML = `Adolescente mulher de ${idade} anos`
             }
             else if (idade >= 18 && idade <= 60){
                 img.src = 'img/adulto_mulher.jpg'
-                res.innerHtml = `Adulto de ${idade} anos`
+                res.innerHTML = `Adulta de ${idade} anos`
             }   
             else if (idade > 60 && idade <= 122){
                 img.src = 'img/idoso_mulher.jpg'
-                res.innerHTML = `Idoso de ${idade} anos`
+                res.innerHTML = `Idosa de ${idade} anos`
             }
             else{
                 img.src = 'img/tartaruga.jpg'
